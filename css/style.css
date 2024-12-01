@@ -63,7 +63,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 17px;
+    gap: 30px;
     padding-right: 70px;
 }
 #id{
@@ -163,14 +163,19 @@ button{
 
 
 #onama{
+   
+}
+
+#tekst{
     text-align: center;
 }
 
 
-
 #onama p{
     width: 500px;
-    display: flex;
+    text-align: center;
+    font-size: 24px;
+
 
 }
 
@@ -798,4 +803,12 @@ form h4{
     
 }
 
+/*--------------*/ 
+.hover-efect:hover{
+    color: rgb(14, 97, 86);
+    
+}
 
+.hover-activate{
+    text-decoration: underline;
+}
