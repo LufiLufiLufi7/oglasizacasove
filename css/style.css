@@ -1,0 +1,801 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-decoration: none;  
+    
+   
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    /*font-family: "Unkempt", cursive;
+    font-weight: 400;
+    font-style: normal;*/
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: rgb(243, 247, 242);
+
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 3.510rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+#navigacionimeni{
+    width: 100%;
+    background-color: rgba(122, 167, 114, 0.5) ; 
+    padding: 7px;
+    font-size: 27px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    backdrop-filter: blur(100px);
+    color: white;
+}
+#logo{
+    width: 417px;
+    height: 80px;
+    font-family: "Give You Glory", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+a {
+    color: white;
+}
+#blok1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 17px;
+    padding-right: 70px;
+}
+#id{
+    /*background-color: blanchedalmond; */
+    display: flex; 
+    justify-content: space-between;
+    gap: 17px;
+}
+
+    
+#lista{
+    display: none;
+    position: absolute;
+    background-color: rgba(122, 167, 114, 0.3) ; 
+}
+
+
+#kate:hover #lista{ 
+    display: block;
+}
+
+button{
+    padding: 7px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px white;
+}
+
+#slika{
+    width: 100%;
+    height: 700px ;
+    background-image: url(../img/knjige2.jpg);
+  
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+    color: white;
+    justify-content: center;
+    align-items:center ;
+}
+#izaberitrazi{
+    width: 500px;
+    height: 50px;
+    background-color: antiquewhite;
+    display: flex;
+    color: black;
+    box-shadow: 5px 5px 15px white;
+    border-radius: 20px;
+    gap: 100px;
+}
+
+
+#izaberi{
+    /*width: 100%;*/
+    /*height: 700px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border-left: 1px solid rgb(49, 33, 3);*/
+    padding: 25px;
+    
+}
+
+#trazi{
+    /*width: 100%;
+    height: 700px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-left: 1px solid rgb(49, 33, 3);
+    padding: 15px;
+}
+
+#search{
+    width: 100px;
+    height: 30px;
+}
+
+#category, #search{
+    border: none;
+    background-color: antiquewhite;
+}
+
+#onama{
+    width: 100%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding: 25px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#onama{
+    text-align: center;
+}
+
+
+
+#onama p{
+    width: 500px;
+    display: flex;
+
+}
+
+.najpopularniji{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.najpopularniji h2{
+    display: flex;
+}
+
+#naj{
+    display: flex;
+    gap: 30px;
+
+}
+
+.profesor:hover{
+    transform: scale(120%);
+    transition-duration: 2s;
+}
+.profesor{
+    width: 250px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;  
+    background-color: rgb(170, 203, 192, 0.5); 
+    border-radius: 50px;
+}
+
+button a{
+    color: black;
+}
+
+.okruglaslika2{
+    width: 200px;
+    height: 150px;
+    border-radius: 30%;
+    box-shadow: 5px 5px 25px black;
+}
+
+.recenzije{
+    /* background-color: antiquewhite; */
+    gap: 30PX;
+}
+
+.okruglaslika{
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 25px black;
+
+}
+.recenzije p{
+    width: 200px;
+    height: 150px;
+}
+.recenzije{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;    
+}
+#okvir1{
+    display: flex;
+    gap: 70px;
+    padding: 30px 0px;
+}
+.prvired:hover{
+    transform: scale(120%);
+    transition-duration: 1s;
+}
+
+.prvired{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+}
+
+
+
+#okvir2{
+    display: flex;
+    gap: 100px;
+    padding: 30px 0px;
+}
+
+.drugired:hover{
+    transform: scale(120%);
+    transition-duration: 1s;
+}
+
+.drugired{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footer{
+    width: 100%;
+    height: 300px;
+    /*background-color: rgba(126, 61, 8, 0.997);*/
+    background-color: rgb(142, 184, 182);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#info{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+#okvirlogo{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+#logo1{
+    width: 417px;
+    font-family: "Give You Glory", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+#prava{
+    width: 417px;
+    font-size: 20px;
+    text-align: center;
+}
+
+h4{
+    font-size: 30px;
+}
+
+
+
+#Linkovi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
+}
+#nmp{
+    width: 417px;
+    display: flex;
+    justify-content: center;
+}
+#nmp i{
+    margin-right: 50px;
+    font-size: 27px;
+}
+
+/*-----------------------o-nama-------------------*/
+
+#onama1{
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/knjige2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center;  
+}
+
+#onamanaslov{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#onamanaslov h1{
+    width: 23%;
+    /*height: 550px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    color: white;
+}
+
+#tekst1{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+#tekstovi{
+    width: 85%;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 70px;
+
+}
+
+.onamatekst{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sredina{
+    margin-top: -300px;
+    text-align: center;
+}
+
+.red1{
+    display: flex;
+    gap: 50px;
+}
+
+.onamatekst1{
+    text-align: center;
+}
+
+
+/*---------------autor----------------*/
+
+/*
+#h1autor{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    color: white;
+}
+    */
+
+#onama2{
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/knjige2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center;  
+}
+
+#onamanaslov1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#onamanaslov1 h1{
+    width: 24%;
+    /*height: 550px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    color: white;
+}
+
+
+#autor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 70px 0px;
+    font-size: 17px;
+}
+
+#autorslika1{
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px black;
+}
+
+#autortekst{
+    width: 370px;
+    text-align: center;
+}
+
+/*-------------prijava----------------*/
+
+
+#onama3{
+
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/knjige2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center; 
+    justify-content: center; 
+
+}
+
+#onamanaslov2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#onamanaslov2 h1{
+    width: 57%;
+    /*height: 550px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    color: white;
+}
+
+
+#forma{
+    width: 100%;
+    display: flex;
+    border: 2px;
+    padding: 70px;
+    flex-direction: row;
+    gap: 10%;   
+}
+
+.prvired{
+    width: 100%;
+    display: flex;
+    
+}
+
+form a{
+    color: black;
+}
+
+#prvaforma{
+    width: 40%;
+    display: flex;
+    border: 1px solid rgba(59, 23, 11, 0.2); 
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 57px;
+    box-shadow: 5px 5px 15px rgb(115, 107, 107);
+    font-size: 24px;
+    
+
+}
+
+#prvaforma form input, select {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    background: rgb(243, 247, 242);
+    /* background-color: rgb(243, 247, 242); */
+}
+
+#prvaforma input{
+    font-size: 17px;
+}
+
+.mt{
+    margin: 33px 0px;
+}
+
+#centar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#klikni button{
+    width: 20%;
+    padding: 7px;
+}
+
+#prvaforma button{
+    font-size: 24px;
+    box-shadow: 5px 5px 15px rgb(115, 107, 107);
+}
+
+.centarbutona{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+#drugaforma{
+    width: 40%;
+    display: flex;
+    height: 613px;
+    border: 1px solid rgba(59, 23, 11, 0.2); 
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgb(115, 107, 107);
+
+}
+
+#prvired{
+    width: 137%;
+    display: flex;
+    font-size: 24px;
+    gap: 132px;
+    justify-content: space-evenly;
+}
+
+.datumpol{
+    width:100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+
+    
+}
+
+#drugaforma form input, select{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    background: rgb(243, 247, 242);
+    /*background-color: rgb(243, 247, 242);*/
+}
+
+#drugaforma button{
+    font-size: 24px;
+    box-shadow: 5px 5px 15px rgb(115, 107, 107);
+    margin-top: 20px;
+}
+.forma-centar{
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.status{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+.lozinke{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#submit{
+    font-size: larger;
+    border-style: hidden;
+    /*background-color: rgb(243, 247, 242); ;*/
+}
+
+.lozinkaprva{
+    display: flex;
+    justify-content: center;
+}
+
+.potvrdalozinke{
+    display: flex;
+    justify-content: center;
+}
+form h4{
+    text-align: center;
+}
+
+/*----------------Oglasi--------------*/
+
+.oglasi{
+    padding: 25px;
+}
+
+.oglasi button{
+    padding: 7px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgb(115, 107, 107);
+}
+.okvirprvi{
+    display: flex;
+    padding: 47px;
+    justify-content: space-between;
+}
+.oglas1{
+    width: 40%;
+    display: flex;
+    height: 613px;
+    border: 1px solid rgba(59, 23, 11, 0.2); 
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*box-shadow: 5px 5px 15px rgb(115, 107, 107);*/
+    box-shadow: 5px 5px 15px rgba(122, 167, 114, 0.5);
+    padding: 25px;
+}
+
+.slikaoglas{
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 25px black;
+}
+.okvirdrugi{
+    display: flex;
+    padding: 77px;
+    justify-content: space-between;
+}
+
+.oglas2{
+    width: 40%;
+    display: flex;
+    height: 613px;
+    border: 1px solid rgba(59, 23, 11, 0.2); 
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(122, 167, 114, 0.5);
+    padding: 25px;
+    
+}
+
+.okvirtreci{
+    display: flex;
+    padding: 44px;
+    justify-content: space-between;
+}
+.oglas3{
+    width: 40%;
+    display: flex;
+    height: 613px;
+    border: 1px solid rgba(59, 23, 11, 0.2); 
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(122, 167, 114, 0.5);
+    padding: 25px;
+    
+}
+
+.okvircetvrti{
+    display: flex;
+    padding: 77px;
+    justify-content: space-between;
+}
+.oglas4{
+    width: 40%;
+    display: flex;
+    height: 613px;
+    border: 1px solid rgba(59, 23, 11, 0.2); 
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(122, 167, 114, 0.5);
+    padding: 25px;
+    
+}
+
+.okvirpeti{
+    display: flex;
+    padding: 77px;
+    justify-content: space-between;
+}
+.oglas5{
+    width: 40%;
+    display: flex;
+    height: 613px;
+    border: 1px solid rgba(59, 23, 11, 0.2); 
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(122, 167, 114, 0.5);
+    padding: 25px;
+    
+}
+
+
