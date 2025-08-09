@@ -11,37 +11,42 @@
 html{
     scroll-behavior: smooth;
 }
+
+
+
+.comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 body{
     overflow-x: hidden;
-    /*font-family: "Unkempt", cursive;
-    font-weight: 400;
-    font-style: normal;*/
-    font-family: "Gamja Flower", sans-serif;
+    font-family: "Comic Relief", system-ui;
     font-weight: 400;
     font-style: normal;
     background: rgb(243, 247, 242);
 
 }
 
-html {font-size: 100%;} /* 16px */
+html {font-size: 77%;} 
 
-h1 {font-size: 3.510rem; /* 67.36px */}
+h1 {font-size: 45px; }
 
-h2 {font-size: 3.158rem; /* 50.56px */}
+h2 {font-size: 35px; }
 
-h3 {font-size: 2.369rem; /* 37.92px */}
+h3 {font-size: 27px; }
 
-h4 {font-size: 1.777rem; /* 28.48px */}
+h4 {font-size: 26px; }
 
-h5 {font-size: 1.333rem; /* 21.28px */}
+h5 {font-size: 25px; }
 
-small {font-size: 0.750rem; /* 12px */}
+h6 {font-size: 24px; }
 
 #navigacionimeni{
     width: 100%;
     background-color: rgba(122, 167, 114, 0.5) ; 
     padding: 7px;
-    font-size: 27px;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -49,7 +54,7 @@ small {font-size: 0.750rem; /* 12px */}
     color: white;
 }
 #logo{
-    width: 417px;
+    width: 402px;
     height: 80px;
     font-family: "Give You Glory", cursive;
     font-weight: 400;
@@ -59,15 +64,17 @@ small {font-size: 0.750rem; /* 12px */}
 a {
     color: white;
 }
+
+
+
 #blok1{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    padding-right: 70px;
+    padding-right: 57px;
 }
 #id{
-    /*background-color: blanchedalmond; */
     display: flex; 
     justify-content: space-between;
     gap: 17px;
@@ -89,8 +96,9 @@ button{
     padding: 7px;
     background-color: antiquewhite;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 5px 5px 15px white;
+    font-family: "Comic Relief", system-ui;
 }
 
 #slika{
@@ -107,6 +115,33 @@ button{
     align-items:center ;
 }
 #izaberitrazi{
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    
+}
+#onamanaslov12{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(137 135 135 / 81%);
+    border-radius: 44%;
+    color: white;
+    margin-left: -500px;
+    animation: animacija 3s forwards 0.5s;
+    text-align: center;
+
+
+}
+
+.indexvodoravno{
+    display: flex;
     width: 500px;
     height: 50px;
     background-color: antiquewhite;
@@ -115,23 +150,17 @@ button{
     box-shadow: 5px 5px 15px white;
     border-radius: 20px;
     gap: 100px;
+
 }
-
-
 #izaberi{
-    /*width: 100%;*/
-    /*height: 700px;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border-left: 1px solid rgb(49, 33, 3);*/
     padding: 25px;
     
 }
 
 #trazi{
-    /*width: 100%;
-    height: 700px;*/
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -156,15 +185,12 @@ button{
     flex-direction: column;
     align-items: center;
     gap: 70px;
-    padding: 25px;
     flex-direction: row;
     justify-content: center;
 }
 
 
-#onama{
-   
-}
+
 
 #tekst{
     text-align: center;
@@ -174,7 +200,7 @@ button{
 #onama p{
     width: 500px;
     text-align: center;
-    font-size: 24px;
+    font-size: 19px;
 
 
 }
@@ -186,7 +212,7 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 70px;
 }
 
 .najpopularniji h2{
@@ -199,20 +225,28 @@ button{
 
 }
 
-.profesor:hover{
+.pravougaonik{
+    height: 500px;
+    width: 237px;
+    display: flex;
+    background-color: rgb(170, 203, 192, 0.5);
+    border-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pravougaonik:hover{
     transform: scale(120%);
     transition-duration: 2s;
 }
 .profesor{
-    width: 250px;
-    height: 500px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 20px;  
-    background-color: rgb(170, 203, 192, 0.5); 
-    border-radius: 50px;
+    
 }
 
 button a{
@@ -227,8 +261,7 @@ button a{
 }
 
 .recenzije{
-    /* background-color: antiquewhite; */
-    gap: 30PX;
+    gap: 37PX;
 }
 
 .okruglaslika{
@@ -241,8 +274,12 @@ button a{
 .recenzije p{
     width: 200px;
     height: 150px;
+    display: flex;
+    align-items: center;
 }
+
 .recenzije{
+    height: 1057px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,7 +288,7 @@ button a{
 }
 #okvir1{
     display: flex;
-    gap: 70px;
+    gap: 157px;
     padding: 30px 0px;
 }
 .prvired:hover{
@@ -266,11 +303,23 @@ button a{
   
 }
 
+.stars{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:rgb(142, 184, 182);
+    font-size: 25px;
+}
+
+
+
+
 
 
 #okvir2{
     display: flex;
-    gap: 100px;
+    gap: 158px;
     padding: 30px 0px;
 }
 
@@ -288,7 +337,6 @@ button a{
 #footer{
     width: 100%;
     height: 300px;
-    /*background-color: rgba(126, 61, 8, 0.997);*/
     background-color: rgb(142, 184, 182);
     color: white;
     display: flex;
@@ -303,9 +351,13 @@ button a{
     gap: 30px;
     justify-content: space-between;
 }
+#Kontakt{
+    width: 287px;
+    font-size: 17px;
+}
 
 #okvirlogo{
-    width: 500px;
+    width: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,25 +377,25 @@ button a{
     text-align: center;
 }
 
-h4{
-    font-size: 30px;
-}
+
 
 
 
 #Linkovi{
+    width: 285px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    font-size: 17px;
+
    
 }
 #nmp{
     width: 417px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 #nmp i{
-    margin-right: 50px;
     font-size: 27px;
 }
 
@@ -355,6 +407,7 @@ h4{
     background-image: url("../img/knjige2.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     background-repeat: no-repeat;
     align-items: center;  
@@ -367,26 +420,33 @@ h4{
     justify-content: center;
     
     
+    
 }
 
 #onamanaslov h1{
-    width: 23%;
-    /*height: 550px;*/
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(137 135 135 / 81%);
     border-radius: 100%;
     color: white;
+    margin-left: -500px;
+    animation: animacija 3s forwards 0.5s;
+}
+
+@keyframes animacija{
+    100%{margin-left: 0px;}
 }
 
 #tekst1{
     width: 100%;
-    height: 700px;
+    height: 950px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     padding: 50px 0px;
+    font-size: 18px;
 }
 
 #tekstovi{
@@ -396,8 +456,8 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-content: flex-end;
-    gap: 70px;
+    justify-content: space-evenly;
+    gap: 45px;
 
 }
 
@@ -407,12 +467,15 @@ h4{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
 
 }
 
 .sredina{
     margin-top: -300px;
     text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
 }
 
 .red1{
@@ -427,17 +490,7 @@ h4{
 
 /*---------------autor----------------*/
 
-/*
-#h1autor{
-    width: 23%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 100%;
-    color: white;
-}
-    */
+
 
 #onama2{
     width: 100%;
@@ -445,6 +498,7 @@ h4{
     background-image: url("../img/knjige2.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     background-repeat: no-repeat;
     align-items: center;  
@@ -457,19 +511,24 @@ h4{
     justify-content: center;
     
     
+    
 }
+
 
 #onamanaslov1 h1{
     width: 24%;
-    /*height: 550px;*/
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(137 135 135 / 81%);
     border-radius: 100%;
     color: white;
+    margin-left: -500px;
+    animation: animacija 3s forwards 0.5s;
 }
-
+@keyframes animacija{
+    100%{margin-left: 0px;}
+}
 
 #autor{
     width: 100%;
@@ -491,6 +550,12 @@ h4{
     text-align: center;
 }
 
+.autorh2{
+    font-size: 18px;
+}
+
+
+
 /*-------------prijava----------------*/
 
 
@@ -501,6 +566,7 @@ h4{
     background-image: url("../img/knjige2.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     background-repeat: no-repeat;
     align-items: center; 
@@ -521,9 +587,11 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(137 135 135 / 81%);
     border-radius: 100%;
     color: white;
+    margin-left: -500px;
+    animation: animacija 3s forwards 0.5s;
 }
 
 
@@ -556,7 +624,7 @@ form a{
     flex-direction: column;
     gap: 57px;
     box-shadow: 5px 5px 15px rgb(115, 107, 107);
-    font-size: 24px;
+    font-size: 18px;
     
 
 }
@@ -566,7 +634,6 @@ form a{
     border-right-style: hidden;
     border-left-style: hidden;
     background: rgb(243, 247, 242);
-    /* background-color: rgb(243, 247, 242); */
 }
 
 #prvaforma input{
@@ -575,6 +642,7 @@ form a{
 
 .mt{
     margin: 33px 0px;
+    font-family: "Comic Relief", system-ui;
 }
 
 #centar{
@@ -604,6 +672,12 @@ form a{
 
 
 
+.drugaformaokviru{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    flex-direction: column;
+}
 
 #drugaforma{
     width: 40%;
@@ -621,18 +695,18 @@ form a{
 #prvired{
     width: 137%;
     display: flex;
-    font-size: 24px;
+    font-size: 18px;
     gap: 132px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .datumpol{
     width:100%;
-    height: 20px;
+    height: 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 20px;
 
     
 }
@@ -642,7 +716,6 @@ form a{
     border-right-style: hidden;
     border-left-style: hidden;
     background: rgb(243, 247, 242);
-    /*background-color: rgb(243, 247, 242);*/
 }
 
 #drugaforma button{
@@ -652,18 +725,18 @@ form a{
 }
 .forma-centar{
     width: 100%;
-    font-size: 25px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }
 
 .status{
-    font-size: 24px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }
 .lozinke{
-    font-size: 24px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -672,12 +745,11 @@ form a{
 #submit{
     font-size: larger;
     border-style: hidden;
-    /*background-color: rgb(243, 247, 242); ;*/
 }
 
 .lozinkaprva{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .potvrdalozinke{
@@ -703,21 +775,24 @@ form h4{
 }
 .okvirprvi{
     display: flex;
-    padding: 47px;
+    padding: 77px;
     justify-content: space-between;
 }
 .oglas1{
     width: 40%;
     display: flex;
-    height: 613px;
+    height: 630px;
     border: 1px solid rgba(59, 23, 11, 0.2); 
     border-radius: 25%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*box-shadow: 5px 5px 15px rgb(115, 107, 107);*/
     box-shadow: 5px 5px 15px rgba(122, 167, 114, 0.5);
     padding: 25px;
+    text-align: center;
+    gap: 25px;
+    font-size: 13px;
+
 }
 
 .slikaoglas{
@@ -735,7 +810,7 @@ form h4{
 .oglas2{
     width: 40%;
     display: flex;
-    height: 613px;
+    height: 630px;
     border: 1px solid rgba(59, 23, 11, 0.2); 
     border-radius: 25%;
     justify-content: center;
@@ -743,18 +818,21 @@ form h4{
     flex-direction: column;
     box-shadow: 5px 5px 15px rgba(122, 167, 114, 0.5);
     padding: 25px;
+    text-align: center;
+    gap: 25px;
+    font-size: 13px;
     
 }
 
 .okvirtreci{
     display: flex;
-    padding: 44px;
+    padding: 77px;
     justify-content: space-between;
 }
 .oglas3{
     width: 40%;
     display: flex;
-    height: 613px;
+    height: 630px;
     border: 1px solid rgba(59, 23, 11, 0.2); 
     border-radius: 25%;
     justify-content: center;
@@ -762,6 +840,9 @@ form h4{
     flex-direction: column;
     box-shadow: 5px 5px 15px rgba(122, 167, 114, 0.5);
     padding: 25px;
+    text-align: center;
+    gap: 25px;
+    font-size: 13px;
     
 }
 
@@ -773,7 +854,7 @@ form h4{
 .oglas4{
     width: 40%;
     display: flex;
-    height: 613px;
+    height: 630px;
     border: 1px solid rgba(59, 23, 11, 0.2); 
     border-radius: 25%;
     justify-content: center;
@@ -781,6 +862,9 @@ form h4{
     flex-direction: column;
     box-shadow: 5px 5px 15px rgba(122, 167, 114, 0.5);
     padding: 25px;
+    text-align: center;
+    gap: 25px;
+    font-size: 13px;
     
 }
 
@@ -792,7 +876,7 @@ form h4{
 .oglas5{
     width: 40%;
     display: flex;
-    height: 613px;
+    height: 630px;
     border: 1px solid rgba(59, 23, 11, 0.2); 
     border-radius: 25%;
     justify-content: center;
@@ -800,6 +884,9 @@ form h4{
     flex-direction: column;
     box-shadow: 5px 5px 15px rgba(122, 167, 114, 0.5);
     padding: 25px;
+    text-align: center;
+    gap: 25px;
+    font-size: 13px;
     
 }
 
@@ -812,3 +899,25 @@ form h4{
 .hover-activate{
     text-decoration: underline;
 }
+
+.oglash2{font-size: 30px;}
+.oglash4{  font-size: 17px;}
+.oglash5{font-size: 16px;}
+.oglash6{font-size: 15px;}
+
+
+.prijavah2{font-size: 30px;}
+
+footer #info  h6{
+    font-size: 27px;
+}
+
+footer #info  h3{
+    font-size: 27px;
+}
+
+footer #info  h4{
+    font-size: 27px;
+}
+
+

@@ -15,13 +15,12 @@
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Give+You+Glory&family=Henny+Penny&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Gamja+Flower&family=Give+You+Glory&family=Henny+Penny&family=Rubik+Wet+Paint&family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Caveat:wght@400..700&family=Comic+Relief:wght@400;700&family=Doto:wght@100..900&family=Fuzzy+Bubbles:wght@400;700&family=Gamja+Flower&family=Give+You+Glory&family=Henny+Penny&family=Indie+Flower&family=Nata+Sans:wght@200&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+
 
     </head>
     <body>
@@ -83,7 +82,7 @@
             <div id="onama3">
                 <!--<img src="img/onama.jpg" alt="O nama" width="500px" height="330px" /> --->
                 <div id="onamanaslov2">
-                    <h1>PRIJAVI SE/REGISTRUJ SE</h1>
+                    <h1>Prijavi se/Registruj se</h1>
                 </div> 
             </div>
 
@@ -96,13 +95,13 @@
                     </div>
 
                     <form class="centarbutona" action="obrada.php" method="get">
-                        <h4>Prijavi se</h4>
+                        <h2 class="prijavah2">Prijavi se</h2>
                         <br/>
                         
                         <div id="centar">
-                            <input type="text" name="E-mail" id="E-mail" required="required" placeholder="E-mail">
+                            <input type="text" name="E-mail" id="E-mail-login" required="required" placeholder="E-mail" autocomplete="username">
                             <br/>
-                            <input type="password" name="lozinka" id="password" placeholder="password">
+                            <input type="password" name="lozinka" id="lozinka-login" placeholder="Lozinka" autocomplete="current-password">
                         </div>
                         <br/>
 
@@ -111,7 +110,9 @@
                         
                         
 
-                        <a href="https://www.facebook.com/">Prijavi se pomocu facebook naloga</a>
+                        <a href="https://www.facebook.com/" ><i class="fa-brands fa-facebook"></i>  Prijavi se pomocu facebook naloga</a>
+                        <br/>
+                        <a href="https://www.google.com/" ><i class="fa-brands fa-google"></i>  Prijavi se pomocu G-mail naloga</a>
                         <br/>
                         <a href="#">Zaboravili ste lozinku? </a>
                     </form>
@@ -119,73 +120,78 @@
 
                 <div id="drugaforma">
                     <form class="centarbutona" action="obrada.php" method="get">
-                        <h4>REGISTRUJ SE</h4>
-                        <div id="prvired">
-                            <div class="imeprezime">
-                                <label for="first name">Name:</label>
-                                <br/>
-                                <input type="text" name="first-name" id="first-name" required="required" placeholder="Ime">
-                            </div>
+                        <h2 class="prijavah2">Registruj se</h2> <br/>
 
-                            <div class="imeprezime">
-                                <label for="Last name">Last name </label>
-                                <br/>
-                                <input type="text" name="Last Name" id="last-name" required="required" placeholder="Prezime"> 
-                            </div>
-                        </div>
-                        <br/>
-                        <div class="forma-centar">
-                            <label for="E-mail">E-mail
-                                <span class="zvezdica">*</span>
-                            </label>
-                            <input type="text" name="E-mail" id="E-mail" required="required" placeholder="oglasi.oglasi@gmail.com">
-                        </div>
-                        <br/>
-                        <div class="forma-centar"> 
-                            <label for="phone"> 
-                                Phone 
-                                <span class="zvezdica">*</span>
-                            </label>
-                            <input type="phone" name="Telefon" id="phone" placeholder="+381 64 0131 230" required="required">
-                        </div>
-                        <br/>
-                        <div class="datumpol">
-                            <div class="pol">
-                                <label for="text">Pol:</label>
-                                <input type="radio" name="male" id="male">
-                                <label for="male">M </label>
-                                <input type="radio" name="male" id="female">
-                                <label for="female">Z</label>
-                            </div>
-                            <br/>
+                        <div class="drugaformaokviru">
                         
-                            <div class="datum">
-                                <label for="date">Datum rodjenja</label>
-                                <input type="date" name="datum" id="date">
-                            </div>
-                        </div>
-                        <br/>
-                        <div class="status">
-                            <label for="status">Status</label>
-                            <select name="status" id="status">
-                                <option value="Izaberi">-Izaberi status-</option>
-                                <option value="Drzacu casove"> Drzacu casove</option>
-                                <option value="Trazim casove"> Trazim casove</option>
-                                <option value="Oba"> Oba</option>
-                            </select>
-                        </div>
-                        <br/>
-                        <div class="lozinke">
-                            <div class="lozinkaprva">
-                                <label for="password">Password</label>
-                                <input type="password" name="lozinka" id="password" placeholder="********">
+                            <div id="prvired">
+                                <div class="imeprezime">
+                                    <label for="first name">Ime<span class="zvezdica">*</span></label>
+                                    <br/>
+                                    <input type="text" name="first-name" id="first-name" required="required" placeholder="Ime" autocomplete="username">
+                                </div>
+
+                                <div class="imeprezime">
+                                    <label for="Last name">Prezime <span class="zvezdica">*</span></label>
+                                    <br/>
+                                    <input type="text" name="Last Name" id="last-name" required="required" placeholder="Prezime" autocomplete="username"> 
+                                </div>
                             </div>
                             <br/>
-                            <div class="potvrdalozinke">
-                                <label for="password">Potrvda lozinke</label>
-                                <input type="password" name="lozinka" id="password" placeholder="********">
+                            <div class="forma-centar">
+                                <label for="E-mail">E-mail
+                                    <span class="zvezdica">*</span>
+                                </label>
+                                <input type="text" name="E-mail" id="E-mail-register" required="required" placeholder="oglasi.oglasi@gmail.com" autocomplete="username" >
+                            </div>
+                        <br/>
+                            <div class="forma-centar"> 
+                                <label for="phone"> 
+                                    Telefon 
+                                    <span class="zvezdica">*</span>
+                                </label>
+                                <input type="phone" name="Telefon" id="phone" placeholder="+381 67 777 777" required="required">
+                            </div>
+                        <br/>
+                            <div class="datumpol">
+                                <div class="pol">
+                                    <label for="text">Pol:</label>
+                                    <input type="radio" name="male" id="male">
+                                    <label for="male">M </label>
+                                    <input type="radio" name="male" id="female">
+                                    <label for="female">Z</label>
+                                </div>
+                                <br/>
+                            
+                                <div class="datum">
+                                    <label for="date">Datum rodjenja</label>
+                                    <input type="date" name="datum" id="date">
+                                </div>
+                            </div>
+                        <br/>
+                            <div class="status">
+                                <label for="status">Status<span class="zvezdica">*</span></label>
+                                <select name="status" id="status">
+                                    <option value="Izaberi"> -Izaberi status- </option>
+                                    <option value="Drzacu casove"> Drzacu casove</option>
+                                    <option value="Trazim casove"> Trazim casove</option>
+                                    <option value="Oba"> Oba</option>
+                                </select>
+                            </div>
+                        <br/>
+                            <div class="lozinke">
+                                <div class="lozinkaprva">
+                                    <label for="password">Lozinka<span class="zvezdica">*</span></label>
+                                    <input type="password" name="lozinka" id="password-register" placeholder="********" autocomplete="new-password">
+                                </div>
+                                <br/>
+                                <div class="potvrdalozinke">
+                                    <label for="password">Potrvda lozinke<span class="zvezdica">*</span></label>
+                                    <input type="password" name="lozinka" id="password-register2" placeholder="********" autocomplete="new-password">
+                                </div>
                             </div>
                         </div>
+                        <br/>
                         <button> <a href="#">Posalji</a> </button> 
                     </form>
                     
@@ -198,11 +204,13 @@
             <div id="footer">
                 <div id="info">
                     <div id="Kontakt">
-                        <h4>Kontakt</h4> 
+                        <h6>Pomoc i Kontakt</h6> 
                         <br/>
-                        <p>Tehnicka podrska: +381 65 464 366</p>
+                        <p ><i class="fa-solid fa-mobile-screen-button"></i> +381 65 464 366</p>
                         <br/>
-                        <p>E-mail: oglasi@oglasi.com</p>
+                        <p ><i class="fa-solid fa-phone"></i> 0700700700 </p>
+                        <br/>
+                        <p><i class="fa-regular fa-envelope"></i> oglasi@oglasi.com</p>
                         <br/>
                     </div>
 
@@ -215,19 +223,19 @@
                         <div id="nmp"> 
                            <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
                         
-                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/__m_z3/"><i class="fa-brands fa-instagram"></i></a>
                             
                             <a href="https://x.com/?lang=sr"><i class="fa-brands fa-twitter"></i></a>
                         </div>
 
                         <div id="prava">
-                            <p>Sva prava zadržana © Milena Žujović 170/24</p>
+                            <p> © 2024 Milena Žujović Sva prava zadržana Broj indeksa: 170/24</p>
                         </div>
 
                     </div>
 
                     <div id="Linkovi">
-                        <h4>Linkovi</h4>
+                        <h3>Linkovi</h3>
                         <br/>
                         <a href="index.html">Pocetna</a>
                         
