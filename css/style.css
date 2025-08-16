@@ -476,7 +476,9 @@ button a{
 
 }
 #onamatekst7slika{
-    width: 40%;
+    width: 700px;
+    display: flex;
+    justify-content: center;
 }
 
 #sredina{
@@ -527,7 +529,7 @@ button a{
 
 }
 
-.onamatekst1{
+#onamatekst17{
     height: 500px;
     display: flex;
     text-align: center;
